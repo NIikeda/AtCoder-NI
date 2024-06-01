@@ -20,9 +20,10 @@ cd ..  #一つ上の階層のファイルに移動する
 git clone git@github.com:NIikeda/AtCoder-NI.git
 ```
 こんな感じ
-![image](https://github.com/NIikeda/AtCoder-NI/assets/158264039/96f6aca1-85c1-42fd-b7f3-2d8a2526661b)
-
+![alt text](image.png)
 ## GitHubのアカウントでsshキーを登録する
+https://zenn.dev/taki_san/articles/e18613a464e74b
+
 
 ## ブランチを作成
 
@@ -51,7 +52,7 @@ git add .
 ```
 git commit -m "I solved Q1."
 ```
--mの後はなんでもいいが何かしら記述しないとコミットできない
+-mの後はなんでもいいが何かしら記述しないとコミットできない  
 解いた問題番号でも書いておくのがいいだろう
 
 ## pushする
@@ -64,7 +65,7 @@ git commit -m "I solved Q1."
 ```
 git pull <remote_name> <branch-name>
 ```
-`<remote_name>`: `git remote -v`で確認が可能。通常は自動で`origin`となっているので`origin`を入れれば大丈夫
+`<remote_name>`: `git remote -v`で確認が可能。通常は自動で`origin`となっているので`origin`を入れれば大丈夫  
 `<branch-name>`: 反映させたいブランチ名を入れる。要するに、今回のケースなら`main`
 
 例
@@ -78,17 +79,13 @@ pushする
 ```
 git push <remote_name> <branch-name>
 ```
-`<remote_name>`: `git remote -v`で確認が可能。通常は自動で`origin`となっているので`origin`を入れれば大丈夫
-`<branch-name>`: 反映するブランチ名を入れる。要するに、自分が作成したbranch名。今回のケースなら`feature-ikeda`
+`<remote_name>`: `git remote -v`で確認が可能。通常は自動で`origin`となっているので`origin`を入れれば大丈夫 
+`<branch-name>`: 反映するブランチ名を入れる。要するに、自分が作成したbranch名。今回のケースなら`feature-ikeda`  
 例
 ```
 git push origin feature-ikeda
 ```
-usernameとpasswardの入力
-```
-Username for 'https://github.com': your_github_username
-Password for 'https://your_github_username@github.com': your_personal_access_token
-```
+
 
 
 
